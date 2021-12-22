@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const Dessert: NextPage = () => {
+const DessertWinePage: NextPage = () => {
   return (
     <div>
       <h1>Dessert</h1>
@@ -8,4 +8,4 @@ const Dessert: NextPage = () => {
   )
 }
 
-export default Dessert;
+export default DessertWinePage;
