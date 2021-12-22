@@ -1,11 +1,14 @@
 import type { NextPage } from "next";
+import { WineContainer } from "../../components";
 
 const DessertWinePage: NextPage = () => {
+  const name = 'dessert';
+
   return (
-    <div>
-      <h1>Dessert</h1>
-    </div>
-  )
+    <WineContainer 
+      wineName={name}
+    />
+  );
 }
 
 export default DessertWinePage;

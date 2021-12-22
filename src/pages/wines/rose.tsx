@@ -1,11 +1,14 @@
 import type { NextPage } from "next";
+import { WineContainer } from "../../components";
 
 const RoseWinePage: NextPage = () => {
+  const name = 'rose';
+
   return (
-    <div>
-      <h1>Rose</h1>
-    </div>
-  )
+    <WineContainer 
+      wineName={name}
+    />
+  );
 }
 
 export default RoseWinePage;
