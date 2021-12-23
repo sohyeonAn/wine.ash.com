@@ -5,8 +5,7 @@ import { Navigation } from '.';
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
-      <Navigation 
-        key='nav'/>
+      <Navigation />
       <Container>
         { children }
       </Container>
