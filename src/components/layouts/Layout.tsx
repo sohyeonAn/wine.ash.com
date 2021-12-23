@@ -5,14 +5,14 @@ import { Navigation } from '.';
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
-      <Navigation />
+      <Navigation 
+        key='nav'/>
       <Container>
         { children }
       </Container>
     </div>
   )
 }
-
 const Container = styled.main`
   max-width: 1280px;
   margin: auto;
