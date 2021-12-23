@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Beer } from "../types/Beer";
 import styled from "@emotion/styled";
 
@@ -10,7 +11,7 @@ export const BeerCard = ({ beerData }: BeerCardProps) => {
 
   return (
     <Container>
-      <img src={image} alt="" />
+      <Image src={image} alt="" />
       <h2>
         {name}
       <Average>{rating.average?.toFixed(1)}</Average>
