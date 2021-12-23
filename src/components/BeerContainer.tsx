@@ -3,7 +3,11 @@ import { BeerCard } from "./BeerCard";
 import { useBeerData } from "../hooks/useBeerData";
 import { Beer } from "../types/Beer";
 
-export const BeerContainer = ({ beerName }: { beerName: string }) => {
+interface BeerContainerProps {
+  beerName: string
+}
+
+export const BeerContainer = ({ beerName }: BeerContainerProps) => {
   const { data, error } = useBeerData(beerName);
 
   if (error) return <Error />

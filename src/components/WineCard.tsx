@@ -1,10 +1,10 @@
 import { Wine } from "../types/Wine";
 
-interface WineProps {
+interface WineCardProps {
   wineData: Wine
 }
 
-export const WineCard = ({ wineData }: WineProps) => {
+export const WineCard = ({ wineData }: WineCardProps) => {
   const { wine, winery } = wineData;
 
   return (

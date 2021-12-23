@@ -3,7 +3,11 @@ import { WineCard } from "./WineCard";
 import { useWineData } from "../hooks/useWineData";
 import { Wine } from "../types/Wine";
 
-export const WineContainer = ({ wineName }: { wineName: string }) => {
+interface WineContainerProps {
+  wineName: string
+}
+
+export const WineContainer = ({ wineName }: WineContainerProps ) => {
   const { data, error } = useWineData(wineName);
 
   if (error) return <Error />
