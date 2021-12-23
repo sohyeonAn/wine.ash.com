@@ -11,7 +11,12 @@ export const BeerCard = ({ beerData }: BeerCardProps) => {
 
   return (
     <Container>
-      <Image src={image} alt="" />
+      <Image 
+        src={image} 
+        alt="Beer picture"
+        width={100}
+        height={250}
+      />
       <h2>
         {name}
       <Average>{rating.average?.toFixed(1)}</Average>
