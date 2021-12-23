@@ -13,11 +13,11 @@ export const BeerCard = ({ beerData }: BeerCardProps) => {
       <img src={image} alt="" />
       <h2>
         {name}
-      <Average>{rating.average}</Average>
+      <Average>{rating.average?.toFixed(1)}</Average>
       </h2>
-      <p>{price}</p>
+      <p>price: {price}</p>
       <p>
-        {rating.reviews}
+        reviews: {rating.reviews}
       </p>
     </Container>
   )
