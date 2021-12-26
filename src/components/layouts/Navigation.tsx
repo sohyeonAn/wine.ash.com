@@ -22,15 +22,17 @@ export const Navigation = () => {
                     <a>{route.LABEL}</a>
                   </Link>
                   <ul>
-                    {route.SUBS && route.SUBS.map((subRoute: ROUTE) => {
-                      return (
-                      <li key={`${route.LABEL}-${subRoute.LABEL}-${subRoute.ID}`}>
-                        <Link href={`${route.PATH}${subRoute.PATH}`}>
-                          <a>{subRoute.LABEL}</a>
-                        </Link>
-                      </li>
-                      )
-                    })}
+                    {
+                      route.SUBS && route.SUBS.map((subRoute: ROUTE) => {
+                        return (
+                          <li key={`${route.LABEL}-${subRoute.LABEL}-${subRoute.ID}`}>
+                            <Link href={`${route.PATH}${subRoute.PATH}`}>
+                              <a>{subRoute.LABEL}</a>
+                            </Link>
+                          </li>
+                        );
+                      })
+                    }
                   </ul>
                 </li>
               );
